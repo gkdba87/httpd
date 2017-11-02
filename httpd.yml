@@ -1,6 +1,6 @@
 - hosts: localhost
   tasks:
-    - name: Installs httpd web server
+    - name: installs httpd web server
       action: yum name=httpd state=latest 
       notify:
         - start httpd
